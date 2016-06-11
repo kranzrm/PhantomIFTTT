@@ -1,0 +1,14 @@
+{"action":"test connectivity",
+"app_config":null,
+"asset_id":"",
+"config":{
+        "api_key":"",
+},
+"debug_level":3,
+"dec_key":"8",
+"identifier":"test_asset_connectivity",
+"ipc_version":1,
+"parameters": [],
+"type":"response"
+}
+

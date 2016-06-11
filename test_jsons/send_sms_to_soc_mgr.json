@@ -1,0 +1,12 @@
+{"action":"trigger ifttt action",
+"asset_id":"",
+"config":{
+        "api_key":""
+},
+"debug_level":3,
+"dec_key":"8",
+"identifier":"trigger_ifttt_action",
+"ipc_version":1,
+"parameters": [{"action": "send_sms_to_soc_mgr", "value3": "foo", "value2": "bar", "value1": "baz"}]
+}
+
