@@ -22,7 +22,7 @@ For Example:
 
 1. Download a [Phantom](https://www.phantom.us/product.html) appliance from Phantom Cyber.
 2. Select "Import App" from the *Administration / Apps* tab.
-   * Select the `iftttapp.tgz` file
+   * Select the `ifttt.tgz` file
    * Check "Replace an Existing app" if an older version is installed
 3. Obtain an API key from 
 4. Configure the IFTTT asset.  
