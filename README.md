@@ -42,3 +42,4 @@ For Example:
 *   IFTT - If This Then That Website [https://ifttt.com/maker](https://ifttt.com/maker)
 *   IFTT - Maker Channel [https://ifttt.com/maker](https://ifttt.com/maker)
 *   IFTT - SMS Channel [https://ifttt.com/sms](https://ifttt.com/sms)
+*   IFTT - Google Drive Channel [https://ifttt.com/google_drive](https://ifttt.com/google_drive)
