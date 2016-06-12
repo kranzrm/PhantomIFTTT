@@ -1,0 +1,20 @@
+{"action":"trigger ifttt action",
+"app_config":null,
+"asset_id":"",
+"config":{
+        "api_key":"",
+        "appname":"ifttt",
+        "ingest":{"start_time_epoch_utc":null},
+        "main_module":"ifttt_connector.pyc"
+},
+"debug_level":3,
+"dec_key":"8",
+"identifier":"trigger_ifttt_action",
+"ipc_version":1,
+"parameters": [{
+    "action": "arbitrary_action", "value1":"", "value2":"", "value3":""
+}],
+"phantom_version":"1.1.72",
+"type":"response"
+}
+

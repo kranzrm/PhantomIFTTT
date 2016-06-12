@@ -34,7 +34,8 @@ For Example:
    * Product Vendor = "IFTTT"
    * Product Name  = "IFTTT - Maker Channel"
    * Set the "Maker Channel API Key" field in the phantom "Asset Settings" tab
-6. (Optional) Configure the `api_key` and `asset_id` in the json files located in the `test_json` directory (for CLI debugging)
+6. Configure any channels you want to use (on IFTTT)
+7. (Optional) Configure the `api_key` and `asset_id` in the json files located in the `test_json` directory (for CLI debugging)
 
 ## References
 

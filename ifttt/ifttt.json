@@ -75,13 +75,13 @@
         "identifier": "send_sms_message",
         "read_only": true,
         "parameters": {
-          "value1": {
+          "message_title": {
             "description": "Message Title",
             "data_type": "string",
             "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
             "required": false
           },
-          "value2": {
+          "message": {
             "description": "Message Text",
             "data_type": "string",
             "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],

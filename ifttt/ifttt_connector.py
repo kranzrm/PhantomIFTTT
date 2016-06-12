@@ -105,7 +105,7 @@ class IFTTTConnector(BaseConnector):
         # Setup Parameters
         self.save_progress("Triggering Action")
         ret_val, response = self._trigger_action('send_sms_message', action_result,
-            param.get('value1', ''), param.get('value2', ''), param.get('value3', ''))
+            param.get('message_title', ''), param.get('message', ''), param.get('value3', ''))
 
         if (not ret_val):
             return action_result.get_status()
