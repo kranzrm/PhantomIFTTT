@@ -1,0 +1,12 @@
+{"action":"save to google drive",
+"asset_id":"",
+"config":{
+        "api_key":""
+},
+"debug_level":3,
+"dec_key":"8",
+"identifier":"save_to_google_drive",
+"ipc_version":1,
+"parameters": [{"value3": "foo", "value2": "All our bases belong to them", "value1": "SampleTitle"}]
+}
+

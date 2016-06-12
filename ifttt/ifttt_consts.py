@@ -7,3 +7,7 @@ IFTTT_ERR_TRIGGER = "Trigger Failed.  Check API key or Network Connection"
 IFTTT_ERR_SERVER_CONNECTION = "Validate Internet Connectivity / Proxy Config"
 
 IFTTT_MAKER_BASE_URL = "https://maker.ifttt.com/trigger/{0}/with/key/{1}"
+
+ACTION_ID_TRIGGER_ACTION = "trigger_ifttt_action"
+ACTION_ID_SEND_MESSAGE = "send_sms_message"
+ACTION_ID_SAVE_TO_DRIVE = "save_to_google_drive"

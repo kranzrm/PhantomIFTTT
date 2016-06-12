@@ -20,7 +20,7 @@ requests.packages.urllib3.disable_warnings()
 # Define the App Class
 class IFTTTConnector(BaseConnector):
 
-    ACTION_ID_TRIGGER_ACTION = "trigger_ifttt_action"
+    # ACTION_ID_TRIGGER_ACTION = "trigger_ifttt_action"
 
     def __init__(self):
 
@@ -98,6 +98,46 @@ class IFTTTConnector(BaseConnector):
         action_result.set_status(phantom.APP_SUCCESS, "Successfull")
         return self.set_status_save_progress(phantom.APP_SUCCESS, "Action Successfull")
 
+    def _handle_send_message(self, param):
+        # Add an action result to the App Run
+        action_result = self.add_action_result(ActionResult(dict(param)))
+
+        # Setup Parameters
+        self.save_progress("Triggering Action")
+        ret_val, response = self._trigger_action('send_sms_message', action_result,
+            param.get('value1', ''), param.get('value2', ''), param.get('value3', ''))
+
+        if (not ret_val):
+            return action_result.get_status()
+
+        if (not response):
+            # There was an error, no results
+            action_result.append_to_message(IFTTT_ERR_TRIGGER)
+            return action_result.get_status()
+
+        action_result.set_status(phantom.APP_SUCCESS, "Successfull")
+        return self.set_status_save_progress(phantom.APP_SUCCESS, "Action Successfull")
+
+    def _handle_save_to_google_drive(self, param):
+        # Add an action result to the App Run
+        action_result = self.add_action_result(ActionResult(dict(param)))
+
+        # Setup Parameters
+        self.save_progress("Triggering Action")
+        ret_val, response = self._trigger_action('save_to_google_drive', action_result,
+            param.get('value1', ''), param.get('value2', ''), param.get('value3', ''))
+
+        if (not ret_val):
+            return action_result.get_status()
+
+        if (not response):
+            # There was an error, no results
+            action_result.append_to_message(IFTTT_ERR_TRIGGER)
+            return action_result.get_status()
+
+        action_result.set_status(phantom.APP_SUCCESS, "Successfull")
+        return self.set_status_save_progress(phantom.APP_SUCCESS, "Action Successfull")
+
     def handle_action(self, param):
         ret_val = phantom.APP_SUCCESS
 
@@ -105,8 +145,12 @@ class IFTTTConnector(BaseConnector):
         action_id = self.get_action_identifier()
         self.debug_print("action_id", self.get_action_identifier())
 
-        if (action_id == self.ACTION_ID_TRIGGER_ACTION):
+        if (action_id == ACTION_ID_TRIGGER_ACTION):
             ret_val = self._handle_trigger_action(param)
+        elif (action_id == ACTION_ID_SEND_MESSAGE):
+            ret_val = self._handle_send_message(param)
+        elif (action_id == ACTION_ID_SAVE_TO_DRIVE):
+            ret_val = self._handle_save_to_google_drive(param)
         elif (action_id == phantom.ACTION_ID_TEST_ASSET_CONNECTIVITY):
             ret_val = self._test_connectivity(param)
 

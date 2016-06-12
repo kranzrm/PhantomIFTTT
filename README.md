@@ -10,28 +10,35 @@ This app can be used to integrate automations with all the offerings of If-This-
 For Example:
 
 *   Send an SMS message when playbook actions are complete on a container [Phantom Cyber - SMS Alert](https://ifttt.com/recipes/428641-phantom-cyber-sms-alert)
+*   Save Container/Incident details to a Google Drive spreadsheet [Phantom/IFTTT Google Drive Recipe](https://ifttt.com/recipes/428980-save-phantom-incident-details-to-google-drive-spreadsheet)
 
 ## Current Actions
 
-* `trigger ifttt action` - Trigger an arbitrary action in the IFTTT Maker Channel
+* `trigger ifttt action` - Trigger an arbitrary action via the IFTTT Maker Channel
+* `send message` - Send and SMS Message [Phantom/IFTTT SMS Recipe)](https://ifttt.com/recipes/428641-phantom-cyber-sms-alert)
+* `save to google drive` - Send container details to a Google Drive Spreadsheet [Phantom/IFTTT Google Drive Recipe](https://ifttt.com/recipes/428980-save-phantom-incident-details-to-google-drive-spreadsheet)
 
 ## Future Features
 
+* More Prebuilt actions for common use-cases
 
 ## Setup
 
-1. Download a [Phantom](https://www.phantom.us/product.html) appliance from Phantom Cyber.
+1. Download the latest [Phantom](https://www.phantom.us/product.html) virtual appliance from Phantom Cyber.
 2. Select "Import App" from the *Administration / Apps* tab.
    * Select the `ifttt.tgz` file
    * Check "Replace an Existing app" if an older version is installed
-3. Obtain an API key from 
-4. Configure the IFTTT asset.  
+3. Create an IFTTT Account ([https://ifttt.com/join](IFTTT Sign-Up Page))
+4. Obtain a free API key from the [https://ifttt.com/maker](Maker Channel)
+5. Configure the IFTTT asset.  
    * Product Vendor = "IFTTT"
    * Product Name  = "IFTTT - Maker Channel"
    * Set the "Maker Channel API Key" field in the phantom "Asset Settings" tab
-5. Configure the `api_key` and `asset_id` in the json files located in the `test_json` directory (for CLI debugging)
+6. (Optional) Configure the `api_key` and `asset_id` in the json files located in the `test_json` directory (for CLI debugging)
 
 ## References
 
 *   Phantom Cyber Product Page [https://www.phantom.us/product.html](https://www.phantom.us/product.html)
-*   Phantom Cyber Product Page [https://www.phantom.us/product.html](https://www.phantom.us/product.html)
+*   IFTT - If This Then That Website [https://ifttt.com/maker](https://ifttt.com/maker)
+*   IFTT - Maker Channel [https://ifttt.com/maker](https://ifttt.com/maker)
+*   IFTT - SMS Channel [https://ifttt.com/sms](https://ifttt.com/sms)
