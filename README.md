@@ -22,9 +22,11 @@ For Example:
 
 ## Future Features
 
-* More Prebuilt actions for common use-cases
+* Turn Philips Hue LED red when executing playbooks
 
 ## Setup
+
+> See the [Wiki](https://github.com/kranzrm/PhantomIFTTT/wiki) for more detailed setup instructions.
 
 1. Download the latest [Phantom](https://www.phantom.us/product.html) virtual appliance from Phantom Cyber.
 2. Select "Import App" from the *Administration / Apps* tab.
@@ -42,6 +44,7 @@ For Example:
 ## References
 
 *   Phantom Cyber Product Page [https://www.phantom.us/product.html](https://www.phantom.us/product.html)
+*   PhantomIFTTT [Wiki](https://github.com/kranzrm/PhantomIFTTT/wiki)
 *   IFTT - If This Then That Website [https://ifttt.com/maker](https://ifttt.com/maker)
 *   IFTT - Maker Channel [https://ifttt.com/maker](https://ifttt.com/maker)
 *   IFTT - SMS Channel [https://ifttt.com/sms](https://ifttt.com/sms)
