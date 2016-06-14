@@ -3,6 +3,8 @@
 This App for [Phantom security orchestrator](https://www.phantom.us/product.html) provides integration with IFTTT automation
 
 
+<img src="wiki/images/ifttt-phantom.png" width="400">
+
 ## Suggested Use-Cases
 
 This app can be used to integrate automations with all the offerings of If-This-Then-That (IFTTT)
