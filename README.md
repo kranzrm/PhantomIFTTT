@@ -3,7 +3,7 @@
 This App for [Phantom security orchestrator](https://www.phantom.us/product.html) provides integration with IFTTT automation
 
 
-<img src="wiki/images/ifttt-phantom.png" width="400">
+<img src="https://github.com/kranzrm/PhantomIFTTT/wiki/images/ifttt-phantom.png" width="400">
 
 ## Suggested Use-Cases
 
