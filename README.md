@@ -22,7 +22,7 @@ For Example:
 
 ## Future Features
 
-* Turn Philips Hue LED red when executing playbooks
+* Turn Philips Hue LED red when executing playbooks (Currently don't have a Philips Hue bulb or a bridge to test with)
 
 ## Setup
 
