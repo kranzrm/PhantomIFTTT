@@ -4,7 +4,7 @@
     "description" : "IFTTT Maker Channel connector",
     "publisher": "Ryan Kranz",
     "package_name": "phantom_ifttt",
-    "type": "automation service",
+    "type": "generic",
     "license": "The GNU General Public License v3.0",
     "main_module" : "ifttt_connector.py",
     "app_version": "1.0.0",
@@ -34,7 +34,7 @@
         "versions":"EQ(*)"
       },
       {
-        "action": "trigger ifttt action",
+        "action": "run action",
         "description": "Trigger an ifttt action (via the Maker Channel)",
         "type": "generic",
         "identifier": "trigger_ifttt_action",
@@ -49,19 +49,19 @@
           "value1": {
             "description": "First Optional Value",
             "data_type": "string",
-            "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
+            "contains": [],
             "required": false
           },
           "value2": {
             "description": "Second Optional Value",
             "data_type": "string",
-            "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
+            "contains": [],
             "required": false
           },
           "value3": {
             "description": "Third Optional Value",
             "data_type": "string",
-            "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
+            "contains": [],
             "required": false
           }
         },
@@ -78,13 +78,13 @@
           "message_title": {
             "description": "Message Title",
             "data_type": "string",
-            "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
+            "contains": [],
             "required": false
           },
           "message": {
             "description": "Message Text",
             "data_type": "string",
-            "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
+            "contains": [],
             "required": false
           }
         },
@@ -92,7 +92,7 @@
         "versions":"EQ(*)"
       },
       {
-        "action": "save to google drive",
+        "action": "upload file",
         "description": "Save Container details to Google Drive",
         "type": "generic",
         "identifier": "save_to_google_drive",
@@ -101,19 +101,19 @@
           "value1": {
             "description": "Field 1 (Optional)",
             "data_type": "string",
-            "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
+            "contains": [],
             "required": false
           },
           "value2": {
             "description": "Field 2 (Optional)",
             "data_type": "string",
-            "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
+            "contains": [],
             "required": false
           },
           "value3": {
             "description": "Field 3 (Optional)",
             "data_type": "string",
-            "contains": ["domain", "malwr task id", "ip", "pid", "vm", "srp guid", "file size", "vault id", "firewall rule name", "carbon black query type", "port", "carbon black sensor id", "process name", "cyphort event id", "tanium question", "isightpartners report id", "flash", "pe file", "network application", "threatgrid task id", "jira project key", "rt ticket id", "sha256", "email", "host name", "carbon black query", "hash", "anubis task id", "rt queue", "javascript", "urlquery report id", "volatility profile", "os memory dump", "file path", "qradar offense id", "urlquery queue id", "carbon black watchlist", "servicenow ticket id", "md5", "mobileiron device uuid", "wepawet task id", "sha1", "lastline task id", "mac address", "url", "doc", "file name", "user name", "cuckoo task id", "jira ticket status", "pdf", "jira ticket key"],
+            "contains": [],
             "required": false
           }
         },
