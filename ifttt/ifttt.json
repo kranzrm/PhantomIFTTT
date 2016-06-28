@@ -92,7 +92,7 @@
         "versions":"EQ(*)"
       },
       {
-        "action": "upload file",
+        "action": "send to",
         "description": "Save Container details to Google Drive",
         "type": "generic",
         "identifier": "save_to_google_drive",
